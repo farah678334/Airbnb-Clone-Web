@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Airbnb</title>
+  <link rel="icon" type="image/png" href="airbnb.png">
+  <link rel="stylesheet" href="style1.css">
+  <style>
+ 
+
+
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <img src="images/bnb.png" width="100em" height="100em" style="display:inline-flex;mix-blend-mode: multiply;"/>
+    <nav class="nav-actions">
+      <a class="btn btn-outline" href="SignUp.html">Sign up</a>
+      <a class="btn btn-primary" href="login.html">Log in</a>
+      <a class="btn btn-link" href="my_reservations.php">My reservations</a>
+    </nav>
+  </div>
+</header>
+
+  <h1>Available Apartments</h1>
+<div class="city-container"> 
+<h2>Lebanon Apartments</h2>
+  <div class="listings">
+    <div class="listing">
+      <a href="ap1.html">
+        <img src="images/beirut-achrafieh/terrace7.avif" alt="Apartment 1">
+      </a>
+    </div>
+
+    <div class="listing">
+      <a href="ap2.html">
+        <img src="images/beirut-Gemmayze/livingroom1.avif" alt="Apartment 2">
+      </a>
+    </div>
+
+    <div class="listing">
+      <a href="ap3.html">
+        <img src="images/Batroun1/livingroom2.avif" alt="Apartment 3">
+      </a>
+    </div>
+
+    <div class="listing">
+      <a href="ap4.html">
+        <img src="images/Batroun2/livingroom3.avif" alt="Apartment 4">
+      </a>
+    </div>
+	</div>
+	</div>
+
+<div class="city-container"> 
+<h2>France Apartments</h2>
+<div class="listings">
+     <div class="listing">
+   <a href="ap5.html">
+    <img src="images/Paris1/livingroom1.avif" alt="Apartment 1">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap6.html">
+    <img src="images/Paris2/livingroom2.avif" alt="Apartment 2">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap7.html">
+    <img src="images/nice3/livingroom1.avif" alt="Apartment 3">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap8.html">
+    <img src="images/nice2/livingarea2.avif" alt="Apartment 4">
+   </a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="city-container"> 
+<h2>Turkey Apartments</h2>
+<div class="listings">
+   <div class="listing">
+   <a href="ap9.html">
+    <img src="images/istanbul1/livingroom5.avif" alt="Apartment 1">
+   </a>
+  </div>
+
+  <div class="listing">
+   <a href="ap10.html">
+    <img src="images/istanbul2/terrace1.avif" alt="Apartment 2">
+   </a>
+  </div>
+  
+   <div class="listing">
+   <a href="ap11.html">
+    <img src="images/antalya1/livingroom3.avif" alt="Apartment 3">
+   </a>
+  </div>
+  
+   <div class="listing">
+   <a href="ap12.html">
+    <img src="images/antalya2/livingroom2.avif" alt="Apartment 4">
+   </a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="city-container"> 
+<h2>Italy Apartments</h2>
+<div class="listings">
+   <div class="listing">
+   <a href="ap13.html">
+    <img src="images/rome1/livingroom4.avif" alt="Apartment 1">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap14.html">
+    <img src="images/rome2/livingroom1.avif" alt="Apartment 1">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap15.html">
+    <img src="images/milan1/Balcony2.avif" alt="Apartment 1">
+   </a>
+  </div>
+  
+  <div class="listing">
+   <a href="ap16.html">
+    <img src="images/milan2/Balcony.avif" alt="Apartment 1">
+   </a>
+  </div>
+</div>
+</div>
+  </div>
+  <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h2>Log in</h2>
+    <form action="login.php" method="POST" id="login-form">
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Log in</button>
+    </form>
+	<p id="login-message" style="margin-top:10px; font-weight:bold;"></p>
+  </div>
+</div>
+
+<div id="login-success-box" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h3>✅ Login successful!</h3>
+    <p>Welcome back, you are now logged in.</p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h2>Sign up</h2>
+    <form id="signup-form" action="register.php" method="POST">
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Sign up</button>
+    </form>
+	<!-- Success/Error message area -->
+	<p id="signup-message" style="margin-top:10px; font-weight:bold;"></p>
+  </div>
+</div>
+<div id="signup-success-box" class="modal">
+ <div class="modal-content small">
+ <span class="close">&times;</span>
+ <h3>✅ Signup successful!</h3>
+ <p>Welcome, your account has been created.</p>
+ </div> 
+ </div>
+
+<!-- Reserve Modal -->
+<div id="reserve-modal" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h2>Reserve Apartment</h2>
+    <form action="reserve.php" method="POST">
+      <input type="text" name="apartment" placeholder="Apartment name" required><br>
+      <input type="date" name="check_in" required><br>
+      <input type="date" name="check_out" required><br>
+      <input type="number" name="guests" placeholder="Guests" required><br>
+      <button type="submit">Reserve</button>
+    </form>
+  </div>
+</div>
+<script>
+function setupModal(buttonSelector, modalId) {
+  const btns = document.querySelectorAll(buttonSelector);
+  const modal = document.getElementById(modalId);
+  const closeBtn = modal.querySelector(".close");
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault(); // prevent link navigation
+      modal.style.display = "block";
+    });
+  });
+
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.addEventListener("click", e => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+}
+
+// Attach modals to buttons/links
+setupModal("a[href='login.html']", "login-modal");
+setupModal("a[href='SignUp.html']", "signup-modal");
+setupModal("a[href='reserve.html']", "reserve-modal");
+
+// Close logic for signup-success-box
+(function() {
+  const successModal = document.getElementById("signup-success-box");
+  const closeBtn = successModal.querySelector(".close");
+
+  // Close when clicking the ×
+  closeBtn.onclick = () => successModal.style.display = "none";
+
+  // Close when clicking outside the modal
+  window.addEventListener("click", e => {
+    if (e.target === successModal) successModal.style.display = "none";
+  });
+})();
+
+(function() {
+  const loginSuccessModal = document.getElementById("login-success-box");
+  const closeBtn = loginSuccessModal.querySelector(".close");
+
+  // Close when clicking the ×
+  closeBtn.onclick = () => loginSuccessModal.style.display = "none";
+
+  // Close when clicking outside the modal
+  window.addEventListener("click", e => {
+    if (e.target === loginSuccessModal) loginSuccessModal.style.display = "none";
+  });
+})();
+
+document.getElementById("signup-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const msgBox = document.getElementById("signup-message");
+
+  try {
+    const res = await fetch("register.php", {
+      method: "POST",
+      body: formData
+    });
+    const text = await res.text();
+
+    if (text.includes("success")) {
+      this.reset(); // clear fields
+      msgBox.textContent = ""; // clear inline message
+
+      // Close signup modal
+      document.getElementById("signup-modal").style.display = "none";
+      // Show success modal
+      document.getElementById("signup-success-box").style.display = "block";
+    } else {
+      msgBox.textContent = "❌ Registration failed. Please try again.";
+      msgBox.style.color = "red";
+    }
+  } catch (err) {
+    msgBox.textContent = "⚠️ Network error. Please try again.";
+    msgBox.style.color = "orange";
+  }
+});
+
+
+document.getElementById("login-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const msgBox = document.getElementById("login-message");
+
+  try {
+    const res = await fetch("login.php", {
+      method: "POST",
+      body: formData
+    });
+    const text = (await res.text()).trim();
+
+    if (text === "success") {
+      this.reset();
+      msgBox.textContent = "";
+
+      // Close login modal
+      document.getElementById("login-modal").style.display = "none";
+      // Show login success modal
+      document.getElementById("login-success-box").style.display = "block";
+    } else {
+      msgBox.textContent = "❌ Invalid email or password.";
+      msgBox.style.color = "red";
+    }
+  } catch (err) {
+    msgBox.textContent = "⚠️ Network error. Please try again.";
+    msgBox.style.color = "orange";
+  }
+});
+
+
+
+</script>
+
+</body>
+</html>

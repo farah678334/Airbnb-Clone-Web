@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apartment 13 Details</title>
+  <link rel="icon" type="image/png" href="airbnb.png">
+    <link rel="stylesheet" href="style2.css">
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<div class="page-container">
+
+  <!-- Header with buttons -->
+  <section class="hero-actions">
+    <div class="hero-left">
+	<a href="index.html" class="back-btn" aria-label="Back"><i class="fa-solid fa-arrow-left"></i></a>
+      <h1>Dolce Vita Luxury apartment - Zeno 55</h1>
+    </div>
+    <div class="hero-right">
+      <a class="btn btn-primary" href="#" id="open-reserve">Reserve</a>
+      <a class="btn btn-outline" href="#" id="open-signup">Sign up</a>
+      <a class="btn btn-link" href="#" id="open-login">Log in</a>
+    </div>
+  </section>
+
+  <!-- Preview Photos -->
+  <div class="gallery">
+  <div class="image-with-button">
+    <img src="images/rome1/dining area1.avif" alt="Dining Area">
+	<button class="view-photos-btn" onclick="window.location.href='imgpic13.html'"> View All Photos </button> 
+	</div>
+    <img src="images/rome1/dining area2.avif" alt="Dining Area">
+    <img src="images/rome1/dining area3.avif" alt="Dining Area">
+	<img src="images/rome1/dining area8.avif" alt="Dining Area">
+    <img src="images/rome1/dining area4.avif" alt="Dining Area">
+  </div>
+
+<!-- Description preview -->
+  <div class="apartment-description">
+    <h2>Entire rental unit in Rome, Italy</h2>
+	<h3>265.5$ for 1 night</h3>
+    <p>4guests · 2bedrooms · 2beds · 1.5baths</p>
+    <p>
+      Dear guests, welcome to the Dolce Vita!<br>
+	The apartment is a stone's throw from Via Veneto, opposite the American Embassy, in the historic center. 
+	Let yourself be won over by the timeless charm of the Roman dolce vita!<br>
+	The location is strategic to be able to visit all the most iconic places of our wonderful city.<br>
+	In the evening, you can choose one of the many restaurants you will find near the house and then relax in your personal movie theater.
+    </p>
+    <button id="show-description-btn" style="color:black; font-size:16px; font-weight:bold">Show more</button>
+  </div>
+
+  <!-- Description Modal -->
+  <div id="description-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Apartment Description</h2>
+
+      <h3>About this space</h3>
+      <p>
+         Dear guests, welcome to the Dolce Vita!<br>
+	The apartment is a stone's throw from Via Veneto, opposite the American Embassy, in the historic center. 
+	Let yourself be won over by the timeless charm of the Roman dolce vita!<br>
+	The location is strategic to be able to visit all the most iconic places of our wonderful city.<br>
+	In the evening, you can choose one of the many restaurants you will find near the house and then relax in your personal movie theater.
+      </p>
+      
+	  <hr>
+
+      <h3>The space</h3>
+      <p>
+        Live the Roman dream in this apartment on two levels of very recent renovation, consisting of two bedrooms,	two bathrooms
+		of which one en-suite, a very large living room with dining table and living area, and an amazing cinema room.<br><br>
+
+		Zeno Real Estate Srl manages on behalf of short-term property owners. Each unit is privately owned and 
+		rented in the name and on behalf of therespective owner”
+      </p>
+	  
+	  <hr>
+
+      <h3>Guest access</h3>
+      <p>Guests have exclusive access to the entire apartment.</p>
+		
+	  <hr>
+	  
+	  <h3>Registration Details</h3>
+      <p>
+        IT058091C27IT73R9D
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+ 
+<div class="offers">
+  <h2>What this place offers</h2> 
+
+  <!-- Preview sections -->
+  <div class="amenities-grid">
+    <ul>
+      <li><i class="fa-solid fa-kitchen-set icon"></i><span>Kitchen</span></li>
+      <li><i class="fa-solid fa-wifi icon"></i><span>Wifi</span></li>
+      <li><i class="fa-solid fa-tv icon"></i><span>TV</span></li>
+      <li><i class="fa-solid fa-elevator icon"></i><span>Elevator</span></li>
+      <li><i class="fa-solid fa-soap icon"></i><span>Washer</span></li>
+    </ul>
+    <ul>
+      <li><i class="fa-solid fa-snowflake icon"></i><span>Air conditioning</span></li>
+      <li><i class="fa-solid fa-bath icon"></i><span>Hair dryer</span></li>
+      <li><i class="fa-solid fa-box icon"></i><span>Refrigerator</span></li>
+      <li><i class="fa-solid fa-ban icon"></i><span>Unavailable: Smoke alarm</span></li>
+    </ul>
+  </div>
+
+  <!-- Button to show all -->
+  <button id="show-all-btn" style="color:black; font-size:16px; font-weight:bold">Show all amenities</button>
+</div>
+
+<!-- Modal with full list -->
+<div id="amenities-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>What this place offers</h2>
+
+    <!-- Bathroom -->
+    <div class="amenity-section">
+      <h3>Bathroom</h3>
+      <ul>
+        <li><i class="fa-solid fa-bath icon"></i><span>Hair dryer</span></li>
+        <li><i class="fa-solid fa-pump-soap icon"></i><span>Shampoo</span></li>
+        <li><i class="fa-solid fa-pump-soap icon"></i><span>Body soap</span></li>
+        <li><i class="fa-solid fa-toilet icon"></i><span>Bidet</span></li>
+        <li><i class="fa-solid fa-water icon"></i><span>Hot water</span></li>
+        <li><i class="fa-solid fa-pump-soap icon"></i><span>Shower gel</span></li>
+      </ul>
+    </div>
+
+    <!-- Bedroom and laundry -->
+    <div class="amenity-section">
+      <h3>Bedroom and laundry</h3>
+      <ul>
+        <li><i class="fa-solid fa-soap icon"></i><span>Washer</span></li>
+        <li><i class="fa-solid fa-bed icon"></i><span>Essentials<br><span>Towels, bed sheets, soap, and toilet paper</span></span></li>
+        <li><i class="fa-solid fa-bed icon"></i><span>Bed linens</span></li>
+        <li><i class="fa-solid fa-shirt icon"></i><span>Iron</span></li>
+      </ul>
+    </div>
+
+    <!-- Entertainment -->
+    <div class="amenity-section">
+      <h3>Entertainment</h3>
+      <ul>
+        <li><i class="fa-solid fa-tv icon"></i><span>TV</span></li>
+        <li><i class="fa-solid fa-film icon"></i><span>Movie theater</span></li>
+      </ul>
+    </div>
+
+    <!-- Heating and cooling -->
+    <div class="amenity-section">
+      <h3>Heating and cooling</h3>
+      <ul>
+        <li><i class="fa-solid fa-snowflake icon"></i><span>Air conditioning</span></li>
+        <li><i class="fa-solid fa-fire icon"></i><span>Heating</span></li>
+      </ul>
+    </div>
+
+    <!-- Home safety -->
+    <div class="amenity-section">
+      <h3>Home safety</h3>
+      <ul>
+        <li><i class="fa-solid fa-triangle-exclamation icon"></i><span>Carbon monoxide alarm</span></li>
+        <li><i class="fa-solid fa-fire-extinguisher icon"></i><span>Fire extinguisher</span></li>
+        <li><i class="fa-solid fa-kit-medical icon"></i><span>First aid kit</span></li>
+      </ul>
+    </div>
+
+    <!-- Internet and office -->
+    <div class="amenity-section">
+      <h3>Internet and office</h3>
+      <ul>
+        <li><i class="fa-solid fa-wifi icon"></i><span>Wifi</span></li>
+      </ul>
+    </div>
+
+    <!-- Kitchen and dining -->
+    <div class="amenity-section">
+      <h3>Kitchen and dining</h3>
+      <ul>
+        <li><i class="fa-solid fa-kitchen-set icon"></i><span>Kitchen<br><span>Space where guests can cook their own meals</span></span></li>
+        <li><i class="fa-solid fa-box icon"></i><span>Refrigerator</span></li>
+        <li><i class="fa-solid fa-bowl-food icon"></i><span>Dishes and silverware<br><span>Bowls, chopsticks, plates, cups, etc.</span></span></li>
+        <li><i class="fa-solid fa-snowflake icon"></i><span>Freezer</span></li>
+        <li><i class="fa-solid fa-dishwasher icon"></i><span>Dishwasher</span></li>
+        <li><i class="fa-solid fa-fire-burner icon"></i><span>Stove</span></li>
+        <li><i class="fa-solid fa-oven icon"></i><span>Oven</span></li>
+        <li><i class="fa-solid fa-mug-hot icon"></i><span>Hot water kettle</span></li>
+        <li><i class="fa-solid fa-coffee icon"></i><span>Coffee maker</span></li>
+        <li><i class="fa-solid fa-table icon"></i><span>Dining table</span></li>
+      </ul>
+    </div>
+
+    <!-- Parking and facilities -->
+    <div class="amenity-section">
+      <h3>Parking and facilities</h3>
+      <ul>
+        <li>
+          <i class="fa-solid fa-elevator icon"></i>
+          <span>Elevator<br><span>The home or building has an elevator that’s at least 52 inches deep and a doorway at least 32 inches wide</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="amenity-section">
+      <h3>Services</h3>
+      <ul>
+        <li><i class="fa-solid fa-handshake icon"></i><span>Host greets you</span></li>
+      </ul>
+    </div>
+
+    <!-- Not included -->
+    <div class="amenity-section">
+      <h3>Not included</h3>
+      <ul>
+        <li><i class="fa-solid fa-ban icon"></i><span>Unavailable: Exterior security cameras on property</span></li>
+        <li>
+          <i class="fa-solid fa-ban icon"></i>
+          <span>Unavailable: Smoke alarm<br><span>This place may not have a smoke detector. Reach out to the host with any questions.</span></span>
+        </li>
+        <li><i class="fa-solid fa-ban icon"></i><span>Unavailable: Private entrance</span></li>
+      </ul>
+    </div>
+
+  </div><!-- end modal-content -->
+</div><!-- end modal -->
+
+
+ <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h2>Log in</h2>
+    <form action="login.php" method="POST" id="login-form">
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Log in</button>
+    </form>
+	<p id="login-message" style="margin-top:10px; font-weight:bold;"></p>
+  </div>
+</div>
+
+<div id="login-success-box" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h3>✅ Login successful!</h3>
+    <p>Welcome back, you are now logged in.</p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h2>Sign up</h2>
+    <form id="signup-form" action="register.php" method="POST">
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Sign up</button>
+    </form>
+	<!-- Success/Error message area -->
+	<p id="signup-message" style="margin-top:10px; font-weight:bold;"></p>
+  </div>
+</div>
+<div id="signup-success-box" class="modal">
+ <div class="modal-content small">
+ <span class="close">&times;</span>
+ <h3>✅ Signup successful!</h3>
+ <p>Welcome, your account has been created.</p>
+ </div> 
+ </div>
+
+<!-- Reserve Modal -->
+<div id="reserve-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Reserve Apartment</h2>
+    <form action="reserve.php" method="POST">
+      <input type="text" name="apartment" value="Dolce Vita Luxury apartment - Zeno 55" readonly>
+      <input type="date" name="check_in" required>
+      <input type="date" name="check_out" required>
+      <input type="number" name="guests" placeholder="Guests" required>
+      <button type="submit">Reserve</button>
+    </form>
+  </div>
+</div>
+<!-- Reserve Success Modal -->
+<div id="reserve-success-box" class="modal" style="display:none;">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h3>✅ Reservation successful!</h3>
+    <p>Your apartment has been reserved.</p>
+  </div>
+</div>
+
+<!-- Reserve Error Modal -->
+<div id="reserve-error-box" class="modal" style="display:none;">
+  <div class="modal-content small">
+    <span class="close">&times;</span>
+    <h3>❌ Reservation failed!</h3>
+    <p>Sorry, this apartment is already reserved for those dates.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

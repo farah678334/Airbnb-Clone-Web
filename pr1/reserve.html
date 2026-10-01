@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+  header("Location: login.html");
+  exit();
+}
+?>
+<h2>Reserve Apartment</h2>
+<form action="reserve.php" method="POST">
+  <input type="text" name="apartment" placeholder="Apartment name" required><br>
+  <input type="date" name="check_in" required><br>
+  <input type="date" name="check_out" required><br>
+  <input type="number" name="guests" placeholder="Number of guests" required><br>
+  <button type="submit">Reserve</button>
+</form>
+</html>
